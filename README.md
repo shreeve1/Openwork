@@ -33,3 +33,7 @@ Skip this if you have already onboarded.
 **workflow-builder** — you know your process steps and want to pick the right specialist agents from the library to run each one. Your agent walks you through picking agents per step and chains them into a reusable workflow.
 
 When in doubt: if you can describe the steps yourself, use workflow-builder. If you need someone to figure out the steps with you, use agency-intake.
+
+## Need an expert?
+
+**professional-guidance** — describe a problem in plain English and your agent matches you to the best-fit expert persona from the library (legal, HR, marketing, finance, IT, and more). It then adopts that specialist for the session to work the problem with you.
