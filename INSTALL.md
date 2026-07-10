@@ -8,7 +8,6 @@ This is an OpenWork workspace configuration bundle. It contains:
 - `AGENTS.md` — shared agent operating rules
 - `.opencode/skills/` — reusable skill workflows
 - `agents-library/` — reference library of specialized agent definitions
-- `skills-library/` — design, UI, and web effect skills
 
 ## Installation steps
 
@@ -31,8 +30,6 @@ This is an OpenWork workspace configuration bundle. It contains:
 
 6. Copy `agents-library/` from the source into the target root. If `agents-library/` already exists, merge: add new files, overwrite existing ones with the same name.
 
-7. Copy `skills-library/` from the source into the target root. If `skills-library/` already exists, merge: add new files, overwrite existing ones with the same name.
+7. Clean up: remove the cloned/downloaded source at `/tmp/openwork-config`.
 
-8. Clean up: remove the cloned/downloaded source at `/tmp/openwork-config`.
-
-9. Report what was installed and where.
+8. Report what was installed and where.
