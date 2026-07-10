@@ -11,32 +11,40 @@ problem; you route to one persona file under `agent-personas/`, confirm the
 pick, then **become** that specialist and start solving — without making the
 user restate anything.
 
-The routing map is `agent-personas/INDEX.json` — the live source of truth for
-which personas exist. Each entry has a `name`, `purpose`, `category`, and
-`path`. Each persona `.txt` at that `path` is a full instruction set, and most
-bundle several named sub-agents (the index does **not** list sub-agents — read
-the `.txt` for those).
+The persona collection lives at the **workspace root** under `agent-personas/`
+(not inside this skill folder). The routing map is the workspace-root file
+`agent-personas/INDEX.json` — the live source of truth for which personas exist.
+It is a list of `categories`, each with `category`, `folder`, `count`, and a
+`personas` array; every persona entry has `name`, `purpose`, and `path` (the
+**`category` lives on the parent group, not the persona entry**). Every `path`
+is workspace-root relative (e.g. `agent-personas/<folder>/<Persona>.txt`) and
+usually contains spaces and `&` — quote it when reading. Each persona `.txt` at
+that `path` is a full instruction set, and most bundle several named sub-agents
+(the index does **not** list sub-agents — read the `.txt` for those).
 
 ## Flow
 
 ### 1. Read the problem and the index
-Take the problem description the user gave when invoking the skill. Read
-`agent-personas/INDEX.json`.
+Take the problem description the user gave when invoking the skill. Read the
+workspace-root file `agent-personas/INDEX.json`.
 _Done when:_ you have the problem in hand and the persona list loaded.
 
 ### 2. Clarify only if it changes the routing (0–2 questions)
 "1 maybe 2" is a **ceiling, not a quota**. Ask a clarifying question only when
 the answer would change which persona or sub-agent you pick. If the problem is
 already specific enough to route confidently, ask nothing and go to step 3.
-When you do ask, use the **AskUserQuestion tool** (renders as cards in Cowork),
-and cap at two.
+When you do ask, use the **Question tool** (the `ask_user_question` tool), and
+cap at two.
 _Done when:_ you can name a single best persona with confidence, or you have
 asked at most two questions.
 
 ### 3. Route to a persona, then read it to pick the sub-agent
-Score the problem (plus any answers) against each index entry's `name`,
-`purpose`, and `category`, and pick the single best persona. Then **open that
-persona's `.txt`** at its `path` and choose the most relevant sub-agent from its
+Score the problem (plus any answers) against each persona's `name` and
+`purpose` plus its group's `category`. Some `purpose` values are just a shouty
+title (e.g. "CMMC ASSESSMENT & GAP ANALYSIS EXPERT SYSTEM") rather than a
+description — when `purpose` is thin, lean on `name` and `category`. Pick the
+single best persona. Then **open that persona's `.txt`** at its workspace-root
+`path` (quote it — paths have spaces/`&`) and choose the most relevant sub-agent from its
 menu — sub-agents live only in the file, not the index. Note 1–2 runner-up
 personas from the index in case the user switches.
 _Done when:_ you have one primary pick (persona + a sub-agent named from the
@@ -63,9 +71,9 @@ stated problem.
 - **No confident match:** if nothing scores well (the problem is outside the
   collection's domains), say so and offer the closest 2–3 rather than
   force-adopting a poor fit.
-- **Missing or stale index:** if `agent-personas/INDEX.json` is absent, route by
-  scanning the `agent-personas/` folders and file names directly, and tell the
-  user the index should be regenerated.
+- **Missing or stale index:** if the workspace-root `agent-personas/INDEX.json`
+  is absent, route by scanning the workspace-root `agent-personas/` folders and
+  file names directly, and tell the user the index should be regenerated.
 - **Switching mid-session:** the user can switch persona or sub-agent at any
   time; re-run steps 3–5 for the new pick.
 - **Stay in character** as the adopted persona until told to switch or stop.
