@@ -18,11 +18,13 @@ Follow the instructions at https://github.com/shreeve1/Openwork/blob/main/UPDATE
 
 ## Onboarding
 
-After installing, tell your AI agent:
+First time installing? Tell your AI agent:
 
 ```
 Run the openwork-onboarding skill
 ```
+
+Skip this if you have already onboarded.
 
 ## When to use each skill
 
