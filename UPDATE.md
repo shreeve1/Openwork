@@ -26,11 +26,14 @@ This updates a previously installed OpenWork workspace configuration bundle. Com
 
 5. **agents-library/** — add new files, overwrite changed files. Do not delete files that exist in target but not in source.
 
-6. Clean up: remove the cloned/downloaded source at `/tmp/openwork-config`.
+6. **skills-library/** — add new files, overwrite changed files. Do not delete files that exist in target but not in source.
 
-7. Report:
+7. Clean up: remove the cloned/downloaded source at `/tmp/openwork-config`.
+
+8. Report:
    - Skills added
    - Skills updated
    - AGENTS.md: updated or unchanged
    - agents-library: files added, files updated
+   - skills-library: files added, files updated
    - If nothing changed, say so.
