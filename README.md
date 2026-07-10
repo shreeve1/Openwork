@@ -4,13 +4,17 @@ Shared AI agent configuration for clients — skills, agent library, and operati
 
 ## Quick start
 
-**First time?** Tell your AI agent:
+**First time?** Copy and paste this into your AI agent:
 
-> Follow the instructions in INSTALL.md
+```
+Follow the instructions at https://github.com/shreeve1/Openwork/blob/main/INSTALL.md
+```
 
-**Already installed?** Tell your AI agent:
+**Already installed?** Copy and paste this into your AI agent:
 
-> Follow the instructions in UPDATE.md
+```
+Follow the instructions at https://github.com/shreeve1/Openwork/blob/main/UPDATE.md
+```
 
 ## When to use each skill
 
