@@ -41,16 +41,17 @@ skills-library/
 │   ├── seo-audit/ — Technical SEO audit and diagnosis
 │   ├── stitch-design-taste/ — Semantic design system for Google Stitch
 │   └── swiftui-pro/ — SwiftUI best practices and performance review
-└── web-design/ (60+ skills) — Motion, 3D, and UI styling effects
+└── web-design/ (62 skills) — Motion, 3D, and UI styling effects
     ├── gsap/ — Timelines, ScrollTrigger, stagger, SPA cleanup
     ├── threejs/ — Scene setup, loaders, performance, disposal
     ├── tailwindcss/ — Utility-first patterns, responsive variants
     ├── landing-page/ — Landing page design patterns
     ├── pricing-page/ — Pricing page design patterns
-    └── ... plus 55+ visual effect skills (gradients, shadows, WebGL, etc.)
+    └── plus 56 visual effect/motion/3D skills (glass morphism, gradients, shadows,
+        WebGL backgrounds, scroll animations, grid layouts, particles, etc.)
 ```
 
-**Total: 92 skills across 4 categories (general, media, UI, web-design).**
+**Total: 95 skills across 4 categories (general 18, media 2, UI 13, web-design 62).**
 
 ## How skills are invoked
 
