@@ -1,0 +1,19 @@
+# OS
+.DS_Store
+
+# Dependencies
+node_modules/
+
+# Secrets
+*.env*
+
+# Personal config (gitignored per AGENTS.md)
+opencode.jsonc
+memory/
+
+# OpenWork personal/local
+.opencode/openwork.json
+.opencode/package.json
+.opencode/package-lock.json
+.opencode/skills/agency-build/
+.openwork/state/
