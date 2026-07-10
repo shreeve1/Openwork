@@ -16,6 +16,14 @@ Follow the instructions at https://github.com/shreeve1/Openwork/blob/main/INSTAL
 Follow the instructions at https://github.com/shreeve1/Openwork/blob/main/UPDATE.md
 ```
 
+## Onboarding
+
+After installing, tell your AI agent:
+
+```
+Run the openwork-onboarding skill
+```
+
 ## When to use each skill
 
 **agency-intake** — you have a business process you want automated but don't know the details yet. Give your agent a goal ("I want to automate client onboarding"), and it interviews you step by step, then produces a spec that James will build and iterate on with you.
