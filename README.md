@@ -1,39 +1,25 @@
-# TestyTech OpenWork Configuration
+# TestyTech — An AI Agent That Actually Works Like a Teammate
 
-Shared AI agent configuration for clients — skills, agent library, and operating rules.
+## Get started now
 
-## Quick start
+Tell your AI agent:
 
-**First time?** Copy and paste this into your AI agent:
+> Follow the instructions at https://github.com/shreeve1/Openwork/blob/main/INSTALL.md
 
-```
-Follow the instructions at https://github.com/shreeve1/Openwork/blob/main/INSTALL.md
-```
+Already installed?
 
-**Already installed?** Copy and paste this into your AI agent:
+> Follow the instructions at https://github.com/shreeve1/Openwork/blob/main/UPDATE.md
 
-```
-Follow the instructions at https://github.com/shreeve1/Openwork/blob/main/UPDATE.md
-```
+---
 
-## Onboarding
+## What you just got
 
-First time installing? Tell your AI agent:
+Most AI agents forget everything, can't follow a process, and need you to re-explain yourself every session. Yours won't.
 
-```
-Run the openwork-onboarding skill
-```
+- **Memory that sticks.** Remembers how you work, what you decided, who your clients are — across every session.
+- **Workflows your whole team reuses.** Build a process once, anyone runs it with one sentence.
+- **The right expert, every time.** Legal, HR, marketing, finance, IT — describe a problem, your agent picks the right specialist.
+- **Decisions, not just chat.** Structured conversations that end with something actionable.
+- **Stays current.** Updates itself. No IT person needed.
 
-Skip this if you have already onboarded.
-
-## When to use each skill
-
-**agency-intake** — you have a business process you want automated but don't know the details yet. Give your agent a goal ("I want to automate client onboarding"), and it interviews you step by step, then produces a spec that James will build and iterate on with you.
-
-**workflow-builder** — you know your process steps and want to pick the right specialist agents from the library to run each one. Your agent walks you through picking agents per step and chains them into a reusable workflow.
-
-When in doubt: if you can describe the steps yourself, use workflow-builder. If you need someone to figure out the steps with you, use agency-intake.
-
-## Need an expert?
-
-**professional-guidance** — describe a problem in plain English and your agent matches you to the best-fit expert persona from the library (legal, HR, marketing, finance, IT, and more). It then adopts that specialist for the session to work the problem with you.
+**Plus 100+ expert personas** covering every domain your business touches.
