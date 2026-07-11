@@ -106,7 +106,7 @@ For code: before adding custom abstractions or new dependencies, prefer no code,
 - Use the simplest artifact that fits: Markdown for notes, CSV for simple tables, Excel only when formatting or formulas matter, PowerPoint only when slides were requested.
 - If the output is getting long, tighten it before handing it back.
 
-Ask: “Would a busy office lead say this is more complicated than needed?” If yes, simplify.
+Ask: “Would a busy person say this is more complicated than needed?” If yes, simplify.
 
 ### Make surgical changes
 
